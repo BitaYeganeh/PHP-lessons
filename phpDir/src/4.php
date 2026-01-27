@@ -23,13 +23,20 @@
 
  */
 
-	function calculateSum($a, $b) {
-		return $a + $b;
+	function sumTwoNumbers($number1, $number2) {
+		return $number1 + $number2;
+			}
+			// call the function and display the result
+	echo "The sum of 10 and 90 is: ".sumTwoNumbers(10, 10);
+	echo "<br>";
+	// define a function that passes parameters and call it using parameter values
+	function sumUsingParameters($number1, $number2) {
+		return $number1 + $number2;
 	}
-	$result = calculateSum(15, 25);
-	echo "The sum of 15 and 25 is: " . $result;	
 
-	
+	// call the function and display the result
+	echo "The sum of 10 and 20 is: ".sumUsingParameters(10, 20);
+
 ?>
 
 

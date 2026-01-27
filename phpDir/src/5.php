@@ -27,10 +27,16 @@
  */
 
 	echo "Square root of 16 is: " . sqrt(16) . "<br>";
-  echo $str = "Hello, World!";
-  $arr = array("Bita", "Ahmad", "Rayan");
-  echo "<br>String length is: " . strlen($str) . "<br>";
-  echo "Number of elements in array is: " . count($arr);
+// use a pre-built string function and echo it
+ echo "The length of the string 'Hello World' is ".strlen("Hello World");
+ echo "<br>";
+
+ // use a pre-built Array function and echo it
+ $arr = array("Bita", "Ahmad", "Rayan");
+ echo "The array is: ".implode(", ", $arr);
+ echo "<br>";
+
+  echo "Number of elements in the array is: " . count($arr);
 ?>
 
 

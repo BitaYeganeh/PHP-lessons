@@ -23,7 +23,8 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $name = htmlspecialchars($_POST['name']);
       echo "Hello, " . $name . "!";
-    } else {
+    } 
+    else {
       echo '<form method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '">
               Name: <input type="text" name="name">
               <input type="submit" value="Submit">

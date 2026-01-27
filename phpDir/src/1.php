@@ -25,6 +25,9 @@
 
 
 		   */
+    //echo the text "Hello PHP" with HTML h1 tags
+    echo "<h1>Hello PHP</h1>";
+    
     $name = "James"; $price=5;
     echo $name; echo $price;
 
