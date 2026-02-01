@@ -29,28 +29,25 @@
 		 
 			 */
 
+		// Step 1: Create two variables and assign them values
 		$number1 = 10;
 		$number2 = 20;
+
+		// Step 2: Add the two variables and display the result
 		$sum = $number1 + $number2;
-	    echo "The sum is: " . $sum;
+		echo $sum . "<br>";
 
-		$regularArray = array("Apple", "Banana", "Cherry");
+		// Step 3: Create a regular (indexed) array
+		$regularArray = array(10, 20, 30);
+		echo  "Regular Array Elements: " . $regularArray[0] . ", " . $regularArray[1] . ", " . $regularArray[2] . "<br>";
+
+		// Step 3: Create an associative array with the same values
 		$associativeArray = array(
-			"first" => "Apple", 
-			"second" => "Banana", 
-			"third" => "Cherry"
-			);
-
-		echo "<br>Regular Array: ";
-		foreach ($regularArray as $item) {
-			echo $item . " ";
-		}
-
-		echo "<br>Associative Array: ";
-		foreach ($associativeArray as $key => $value) {
-			echo "$key: $value ";
-		}
-
+		"first" => 10,
+		"second" => 20,
+		"third" => 30
+		);
+		echo "Associative Array Elements: " . $associativeArray["first"] . ", " . $associativeArray["second"] . ", " . $associativeArray["third"];
 		?>
 
 

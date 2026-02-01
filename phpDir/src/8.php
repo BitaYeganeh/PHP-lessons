@@ -26,11 +26,10 @@
 		Step 4 - echo the variable
 
 	*/
-		
+	$text = "I am a software Developer";
+	$encryptedText = crypt($text, "xyz");
+	echo $encryptedText;
 	?>
-
-
-
 
 
 </article><!--MAIN CONTENT-->

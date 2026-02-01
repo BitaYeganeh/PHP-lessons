@@ -1,3 +1,15 @@
+
+<?php
+// Step 3: Start a session and set a session value
+session_start();
+$_SESSION['role'] = 'Software Developer';
+
+// Step 2: Set a cookie that expires in one week
+setcookie("name", "Bita Yeganeh", time() + (7 * 24 * 60 * 60));
+?>
+
+
+
 <?php include "functions.php"; ?>
 <?php include "includes/header.php"; ?>
 
@@ -27,13 +39,19 @@
 
 		Step 3 - Start a session and set it to value, any value you want.
 	*/
-  
-		?>
 
+// CHECKING THE VALUES & DISPLAYING THEM
+  if (isset($_GET['name']) && isset($_GET['role'])) {
+      echo "Name: " . $_GET['name'] . "<br>";
+	    echo "Role: " . $_GET['role'] . "<br><br>";
+  }
+  // create a link with parameters
+  echo '<a href="9.php?name=' . urlencode("Bita Yeganeh") . 
+       '&role=' . urlencode("Software Developer") . 
+       '">Click Here</a>
+       <br><br>';
 
-
-
-
+?>
   </article>
   <!--MAIN CONTENT-->
   <?php include "includes/footer.php"; ?>

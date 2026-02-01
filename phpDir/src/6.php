@@ -20,18 +20,16 @@
 
 
  */
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      $name = htmlspecialchars($_POST['name']);
-      echo "Hello, " . $name . "!";
-    } 
-    else {
-      echo '<form method="post" action="' . htmlspecialchars($_SERVER["PHP_SELF"]) . '">
-              Name: <input type="text" name="name">
-              <input type="submit" value="Submit">
-            </form>';
-    } 
+// Step 1: Check if the form is submitted
+if (isset($_POST["username"])) {
+  echo "You entered: " . $_POST["username"];
+}
 		?>
-
+<form method="POST" action="">
+  <label for="username">Enter your name:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit" value="Submit">
+</form>
 
   </article>
   <!--MAIN CONTENT-->

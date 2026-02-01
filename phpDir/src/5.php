@@ -25,18 +25,18 @@
 	Step 3:  Use a pre-built Array function here and echo it
 
  */
-
-	echo "Square root of 16 is: " . sqrt(16) . "<br>";
-// use a pre-built string function and echo it
- echo "The length of the string 'Hello World' is ".strlen("Hello World");
- echo "<br>";
-
- // use a pre-built Array function and echo it
- $arr = array("Bita", "Ahmad", "Rayan");
- echo "The array is: ".implode(", ", $arr);
- echo "<br>";
-
-  echo "Number of elements in the array is: " . count($arr);
+// Step 1: Use a pre-built math function (sqrt) and echo the result
+$number = 16;
+$squareRoot = sqrt($number);
+echo "The square root of " . $number . " is: " . $squareRoot . "<br>";
+// Step 2: Use a pre-built string function (strtoupper) and echo the result
+$string = "hello world";
+$upperString = strtoupper($string);
+echo "The uppercase version of '" . $string . "' is: " . $upperString . "<br>";
+// Step 3: Use a pre-built array function (count) and echo the result
+$array = array(1, 2, 3, 4, 5);
+$arrayCount = count($array);
+echo "The number of elements in the array is: " . $arrayCount; 
 ?>
 
 

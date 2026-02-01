@@ -25,12 +25,10 @@
 
 
 		   */
-    //echo the text "Hello PHP" with HTML h1 tags
-    echo "<h1>Hello PHP</h1>";
-    
-    $name = "James"; $price=5;
-    echo $name; echo $price;
-
+      
+      // This echo function outputs HTML code to the browser,
+      // which displays the text "Hello PHP" as a heading using h1 tags
+      echo "<h1>Hello PHP</h1>";
     ?>
 
 

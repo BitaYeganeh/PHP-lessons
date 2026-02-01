@@ -24,43 +24,42 @@
 	Step 3 : Make a switch Statement that test againts one condition with 5 cases
 
  */
-	$love = "PHP";
-	if ($love == "Java") {
-		echo "I love Java";
-	} elseif ($love == "Python") {
-		echo "I love Python";
-	} elseif ($love == "PHP") {
-		echo "I love PHP";
-	} else {
-		echo "I love Coding";
-	}
+// Step 1: If statement with elseif and else
+		$language="PHP";
+		if ($language == "Java") {
+			echo "I love Java";
+		} elseif ($language == "Python") {
+			echo "I love Python";
+		} else {
+			echo "I love PHP";
+		}
+		echo "<br>";
 
-	echo "<br>For Loop Output: ";
-	for ($i = 0; $i <= 10; $i++) {
-		echo $i . ", ";
-	}
-	
-	echo "<br>Switch Statement Output: ";
-	$day = 3;
-	switch ($day) {
-		case 1:
-			echo "Monday";
-			break;
-		case 2:
-			echo "Tuesday";
-			break;
-		case 3:
-			echo "Wednesday";
-			break;
-		case 4:
-			echo "Thursday";
-			break;
-		case 5:
-			echo "Friday";
-			break;
-		default:
-			echo "Weekend";
-	}
+		//step 2: For loop to display 10 numbers
+		for ($i=0; $i <= 10; $i++) { 
+			echo $i . " ";
+		}
+		echo "<br>";
+		// Step 3: Switch statement with 5 cases
+		switch ($language) {
+			case "Java":
+				echo "You selected Java";
+				break;
+			case "Python":
+				echo "You selected Python";
+				break;
+			case "C++":
+				echo "You selected C++";
+				break;
+			case "JavaScript":
+				echo "You selected JavaScript";
+				break;
+			case "PHP":
+				echo "You selected PHP";
+				break;
+				
+				
+				}
 ?>
 
 

@@ -23,19 +23,21 @@
 
  */
 
-	function sumTwoNumbers($number1, $number2) {
-		return $number1 + $number2;
-			}
-			// call the function and display the result
-	echo "The sum of 10 and 90 is: ".sumTwoNumbers(10, 10);
-	echo "<br>";
-	// define a function that passes parameters and call it using parameter values
-	function sumUsingParameters($number1, $number2) {
-		return $number1 + $number2;
-	}
-
-	// call the function and display the result
-	echo "The sum of 10 and 20 is: ".sumUsingParameters(10, 20);
+//step 1: Define a function that returns the sum of two numbers
+function sum() {
+	$number1=10;
+	$number2=20;
+	return $number1 + $number2;
+}
+	//display the result of the sum function
+echo sum();
+echo "<br>";	
+//step 2: Define a function that takes parameters and returns their product
+function multiply($number1, $number2) {
+	return $number1 * $number2;
+}
+	//call the multiply function with parameter values and display the result
+echo multiply(5, 4);
 
 ?>
 
