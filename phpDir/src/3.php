@@ -40,6 +40,7 @@
 			echo $i . " ";
 		}
 		echo "<br>";
+		
 		// Step 3: Switch statement with 5 cases
 		switch ($language) {
 			case "Java":

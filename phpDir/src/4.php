@@ -37,7 +37,7 @@ function multiply($number1, $number2) {
 	return $number1 * $number2;
 }
 	//call the multiply function with parameter values and display the result
-echo multiply(5, 4);
+echo "the multiply(5, 4) is: " . multiply(5, 4);
 
 ?>
 
