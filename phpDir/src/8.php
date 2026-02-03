@@ -26,8 +26,9 @@
 		Step 4 - echo the variable
 
 	*/
-	$text = "I am a software Developer";
-	$encryptedText = crypt($text, "xyz");
+	$text = "Hello Bita";
+	$salt = "12345";
+	$encryptedText = crypt($text, $salt);
 	echo $encryptedText;
 	?>
 
